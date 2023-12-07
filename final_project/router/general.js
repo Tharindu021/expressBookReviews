@@ -63,6 +63,7 @@ public_users.get('/isbn/:isbn',function (req, res) {
     }
  });
 ////using promise 
+//const isbn = 1;
 // const getBookDetailsPromise = (isbn) => {
 //   return new Promise((resolve, reject) => {
 //     axios.get(`http://localhost:5000/isbn/${isbn}`) 
@@ -105,7 +106,8 @@ public_users.get('/author/:author',function (req, res) {
         res.status(404).send('Books not found for the given author');
     }
 });
-// ////using promise 
+////using promise 
+// const author = 'Chinua Achebe';
 // const getBookDetailsPromise = (author) => {
 //   return new Promise((resolve, reject) => {
 //     axios.get(`http://localhost:5000/author/${author}`) 
@@ -149,6 +151,7 @@ public_users.get('/title/:title',function (req, res) {
     }
 });
 // ////using promise 
+//const title = 'Things Fall Apart';
 // const getBookDetailsPromise = (title) => {
 //   return new Promise((resolve, reject) => {
 //     axios.get(`http://localhost:5000/title/${title}`) 
