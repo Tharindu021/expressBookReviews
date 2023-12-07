@@ -62,7 +62,7 @@ public_users.get('/isbn/:isbn',function (req, res) {
         res.status(404).send('Book not found');
     }
  });
-// ////using promise 
+////using promise 
 // const getBookDetailsPromise = (isbn) => {
 //   return new Promise((resolve, reject) => {
 //     axios.get(`http://localhost:5000/isbn/${isbn}`) 
@@ -118,7 +118,7 @@ public_users.get('/author/:author',function (req, res) {
 //   });
 // };
 
-// getBookDetailsPromise(isbn)
+// getBookDetailsPromise(author)
 //   .then(book => {
 //     console.log('Book details:', book);
 //   })
@@ -161,7 +161,7 @@ public_users.get('/title/:title',function (req, res) {
 //   });
 // };
 
-// getBookDetailsPromise(isbn)
+// getBookDetailsPromise(title)
 //   .then(book => {
 //     console.log('Book details:', book);
 //   })
